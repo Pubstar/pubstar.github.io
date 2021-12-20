@@ -1,0 +1,95 @@
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color:white;
+      margin: 10px auto;  
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+body{
+    height:90vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+.imgEqui{
+    max-width:100%;
+}
+
+.container{
+    width:300px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    margin:0 auto;
+}
+
+.topImg{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+.topImg img{
+    border-radius: 10px;
+}
+h2{
+    color:hsl(0, 0%, 100%);
+    font-weight: 600;
+    width: 68%;
+}
+h2:hover{
+    color:hsl(178, 100%, 50%);
+    cursor:pointer;
+}
+
+.middleText{
+    color:hsl(215, 51%, 70%, 60%);
+    font-size: 18px;
+}
+
+.ethOffer{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    border-bottom:1px solid hsl(215, 32%, 27%);
+}
+.ethAmount{
+    display:flex;
+    color:hsl(178, 100%, 50%);
+}
+.ethAmount img{
+    margin-right:5px;
+}
+.timeLeft{
+    display:flex;
+    color:hsl(215, 51%, 70%, 60%);
+    font-weight: 400;
+}
+.timeLeft img{
+    margin-right: 2px;
+}
+.bottomPart{
+    margin-top:15px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.bottomPart p{
+    color:hsl(0, 0%, 100%, 55%);
+}
+.bottomPart p span{
+    color:hsl(0, 0%, 100%);
+}
+.bottomPart p span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor:pointer;
+}
+.bottomPart img{
+    border:1px solid white;
+    border-radius: 50%;
+    max-width: 15%;
+    margin-right: 15px;
+}
