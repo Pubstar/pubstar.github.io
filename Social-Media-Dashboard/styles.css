@@ -1,0 +1,260 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root{
+    --dark-mode-bg: hsl(230, 17%, 14%);
+    --dark-mode-card-bg: hsl(228, 28%, 20%);
+    --dark-mode-desaturated-blue: hsl(228, 34%, 66%);
+    --dark-mode-white: hsl(0, 0%, 100%);
+    --green: hsl(163, 72%, 41%);
+    --red: hsl(356, 69%, 56%);
+
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --youTube: hsl(348, 97%, 39%);
+}
+
+body {
+    margin: 0 250px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 0;
+    background-color: var(--dark-mode-bg);
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: var(--dark-mode-white);
+    padding: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    padding: 0;
+    margin-top: 0;
+    color: var(--dark-mode-desaturated-blue);
+    font-weight: 700;
+    font-size:14px;
+    margin: 5px 0;
+}
+
+h1.overview-today {
+    margin-top:50px;
+}
+
+.toggleDarkMode {
+    color: var(--dark-mode-desaturated-blue);
+    font-weight: 700;
+    padding-top:20px;
+}
+.toggleDarkMode div {
+    display:inline-block;
+    position:relative;
+    top:4px;
+}
+
+.card-container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-container.top div {
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:3%;
+    min-width:250px;
+    min-height: 200px;
+}
+.card.facebook {
+    border-top: 5px solid var(--facebook);
+}
+.card.twitter {
+    border-top: 5px solid var(--twitter);
+}
+.card.instagram {
+    border-width:5px 0 0 0;
+    border-style:solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+}
+.card.youtube {
+    border-top: 5px solid var(--youTube);
+}
+
+.card-container.top div.card div.name {
+    color: var(--dark-mode-desaturated-blue);
+    display:flex;
+    margin-bottom: 10px;
+    padding: 0;
+    max-height: 20px;
+}
+
+.card-container.top div.card div.name img {
+    max-width:20px;
+}
+
+.card-container.top div.card div.name span {
+    padding: 0;
+    margin-left:10px;
+    font-weight: 700;
+}
+
+.card-container.top div.card div.overview-value {
+    color: var(--dark-mode-white);
+    font-size:72px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container.top div.card div.overview-up {
+    color: var(--green);
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.card-container.top div.card div.overview-up::before {
+    content: url('images/icon-up.svg');
+}
+
+.card-container.top div.card div.overview-down {
+    color: var(--red);
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.card-container.top div.card div.overview-down::before {
+    content: url('images/icon-down.svg');
+}
+
+.card-container.top div.card div.overview-followers {
+    color: var(--dark-mode-desaturated-blue);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 35px 0;
+}
+
+.card-container.bottom div {
+    margin: 10px 0px;
+    width: 19%;
+}
+
+.small-card img {
+    max-width:20px;
+    max-height: 20px;
+    margin-bottom: 20px;
+}
+
+.small-card {
+    padding: 20px;
+    min-width:100px;
+    border-radius: 10px; 
+}
+
+.small-card section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.views {
+    color: var(--dark-mode-desaturated-blue);
+    font-weight: 700;
+    font-size: 16px;
+}
+.number {
+    font-size: 30px;
+    color: var(--dark-mode-white);
+    font-weight: 700;
+}
+
+.percentage-up {
+    color: var(--green);
+    font-weight: 700;
+    align-self:flex-end;
+}
+.percentage-up::before {
+    content:url('images/icon-up.svg');
+}
+
+.percentage-down {
+    color: var(--red);
+    font-weight: 700;
+    align-self:flex-end;
+}
+.percentage-down::before {
+    content:url('images/icon-down.svg');
+}
+
+.card-container div {
+    background-color: var(--dark-mode-card-bg);
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	display: inline-block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	background: var(--dark-mode-card-bg);
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: hsl(230, 22%, 74%);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 15px;
+}
