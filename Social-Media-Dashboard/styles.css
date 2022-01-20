@@ -1,5 +1,6 @@
 .attribution {
     font-size: 11px;
+    color: white;
     text-align: center;
 }
 
@@ -19,6 +20,11 @@
     --twitter: hsl(203, 89%, 53%);
     --instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youTube: hsl(348, 97%, 39%);
+}
+
+hr {
+    margin: 20px;
+    border:1px solid var(--dark-mode-card-bg);
 }
 
 body {
