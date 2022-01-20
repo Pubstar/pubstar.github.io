@@ -63,7 +63,7 @@ h3 {
 }
 
 h1.overview-today {
-    margin-top:50px;
+    margin:50px 0 20px 0;
 }
 
 .toggleDarkMode {
@@ -103,7 +103,7 @@ h1.overview-today {
 }
 .card.instagram {
     border-width:5px 0 0 0;
-    border-style:solid;
+    border-style: solid;
     border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
 }
 .card.youtube {
@@ -221,6 +221,13 @@ h1.overview-today {
 
 .card-container div {
     background-color: var(--dark-mode-card-bg);
+}
+.card-container div:hover {
+    background-color: rgb(46, 53, 83);
+    cursor:pointer;
+}
+.card-container div:hover div {
+    background-color: rgb(46, 53, 83);
 }
 
 input[type=checkbox]{
