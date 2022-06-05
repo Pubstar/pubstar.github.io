@@ -181,6 +181,8 @@ button {
     color: var(--White);
     background-color: var(--black);
     border: 1px solid black;
+
+    transition: background-color, color 0.3s;
 }
 
 .bottom-images {
@@ -215,7 +217,15 @@ button {
 
 .company-menu,
 .features-menu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s linear, visibility 0s linear;
+
+}
+
+.company-menu.shown,
+.features-menu.shown {
+    transition: opacity 0.2s linear, visibility 0s linear 200ms;
 }
 
 @media (min-width: 1320px) {
@@ -251,7 +261,7 @@ button {
 
     .company-menu,
     .features-menu {
-        display: none;
+        visibility: hidden;
         position: absolute;
         background-color: white;
         border-radius: 20px;
