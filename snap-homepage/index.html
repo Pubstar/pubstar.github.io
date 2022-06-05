@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <aside>
+    <div class="empty-space"></div>
+    <div class="nav-menu-container">
+      <div class="nav-menu">
+        <img class="exit-menu-icon" src="./images/icon-close-menu.svg" alt="">
+        <p class="menu-dropdown features">Features</p>
+        <div class="features">
+          <ul class="nav-menu-list features">
+            <li id="todo-list">Todo List</li>
+            <li id="calendar">Calendar</li>
+            <li id="reminders">Reminders</li>
+            <li id="planning">Planning</li>
+          </ul>
+        </div>
+        <p class="menu-dropdown company">Company</p>
+        <div class="company">
+          <ul class="nav-menu-list company">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <p>Careers</p>
+        <p>About</p>
+        <button class="login-button">Login</button>
+        <button class="register-button">Register</button>
+      </div>
+    </div>
+  </aside>
+  <header class="navbar">
+    <nav>
+      <img class="logo" src="./images/logo.svg" alt="">
+      <img class="hamburger-icon" src="./images/icon-menu.svg" alt="">
+      <div class="nav-desktop">
+        <ul class="nav-ul">
+          <li class="features-li">Features</li>
+          <li class="company-li">Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="nav-buttons">
+          <button class="login-button">Login</button>
+          <button class="register-button">Register</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="features-menu">
+      <ul>
+        <li id="todo-list">Todo List</li>
+        <li id="calendar">Calendar</li>
+        <li id="reminders">Reminders</li>
+        <li id="planning">Planning</li>
+      </ul>
+    </div>
+    <div class="company-menu">
+      <ul>
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div class="wrapper">
+    <section class="header-image">
+      <center><img alt=""></center>
+    </section>
+
+    <div class="content">
+      <section class="remote-work">
+        <h1 class="title-text">Make remote work</h1>
+
+        <p class="main-text">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+
+        <a class="button-learn">Learn more</a>
+      </section>
+
+      <section class="bottom-images">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

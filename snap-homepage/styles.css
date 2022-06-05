@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: 'Epilogue',
+        sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: var(--gray);
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+aside {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.header-image img {
+    content: url('./images/image-hero-mobile.png');
+}
+
+.empty-space {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.74);
+    height: 100%;
+    width: 35%;
+}
+
+.nav-ul {
+    list-style: none;
+}
+
+.nav-desktop {
+    display: flex;
+}
+
+.nav-menu-container {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 65%;
+    right: 0;
+}
+
+.exit-menu-icon {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.nav-menu-list {
+    display: none;
+    list-style: none;
+}
+
+.nav-menu-list li {
+    margin-block: 20px;
+    cursor: pointer;
+}
+
+.nav-menu-list li:hover {
+    font-weight: 700;
+    color: var(--black);
+}
+
+#todo-list::before {
+    margin-right: 15px;
+    content: url(./images/icon-todo.svg);
+}
+
+#calendar::before {
+    margin-right: 15px;
+    content: url(./images/icon-calendar.svg);
+}
+
+#reminders::before {
+    margin-right: 15px;
+    content: url(./images/icon-reminders.svg);
+}
+
+#planning::before {
+    margin-right: 15px;
+    content: url(./images/icon-planning.svg);
+}
+
+.menu-dropdown::after {
+    margin: 20px;
+    content: var(--arrow);
+}
+
+.nav-menu {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.nav-menu p {
+    margin: 14px;
+    cursor: pointer;
+}
+
+.nav-menu p:hover {
+    font-weight: 700;
+    color: var(--black);
+}
+
+button {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: var(--gray);
+    padding: 13px;
+    padding-inline: 21px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.login-button {
+    border: none;
+}
+
+.register-button {
+    border: 1px solid black;
+}
+
+.navbar nav {
+    height: 80px;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.header-image img {
+    max-width: 100%;
+}
+
+.remote-work {
+    text-align: center;
+    margin-inline: 20px;
+}
+
+.title-text {
+    color: var(--black);
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.main-text {
+    margin-bottom: 45px;
+    line-height: 25px;
+}
+
+.button-learn {
+    padding: 13px;
+    padding-inline: 21px;
+    border-radius: 15px;
+    color: var(--White);
+    background-color: var(--black);
+    border: 1px solid black;
+}
+
+.bottom-images {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.bottom-images img {
+    width: 19%;
+}
+
+.register-button:hover,
+.button-learn:hover {
+    background-color: white;
+    color: var(--black);
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.login-button:hover {
+    font-weight: 700;
+    color: var(--black);
+}
+
+.hamburger-icon:hover {
+    cursor: pointer;
+}
+
+.company-menu,
+.features-menu {
+    display: none;
+}
+
+@media (min-width: 1320px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-desktop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-ul {
+        display: flex;
+    }
+
+    .company-menu ul,
+    .features-menu ul {
+        list-style: none;
+    }
+
+    .company-li::after,
+    .features-li::after {
+        padding: 5px;
+        content: var(--arrow);
+    }
+
+    .company-menu,
+    .features-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border-radius: 20px;
+        top: 60px;
+        left: 120px;
+        box-shadow: 1px 1px;
+    }
+
+    .company-menu {
+        left: 300px;
+    }
+
+    .company-menu ul li,
+    .features-menu ul li {
+        margin-block: 20px;
+        cursor: pointer;
+    }
+
+    .company-menu ul li:hover,
+    .features-menu ul li:hover {
+        font-weight: 700;
+    }
+
+    .nav-ul li:hover {
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    li {
+        margin-right: 40px;
+    }
+
+    .logo {
+        margin-left: 25px;
+        margin-right: 50px;
+    }
+
+    .wrapper {
+        margin-top: 50px;
+        padding-inline: 100px;
+        display: flex;
+    }
+
+    .header-image {
+        order: 2;
+        margin-right: 150px;
+        flex-shrink: 1;
+    }
+
+    .header-image img {
+        content: url('./images/image-hero-desktop.png');
+        max-height: 800px;
+    }
+
+    .content {
+        order: 1;
+        align-self: flex-end;
+        margin-right: 175px;
+        margin-left: 150px;
+        flex-shrink: 3;
+    }
+
+    .title-text {
+        font-size: 92px;
+        margin-bottom: 75px;
+    }
+
+    .remote-work {
+        text-align: left;
+        font-size: 18px;
+        margin-bottom: 120px;
+    }
+
+    .main-text {
+        margin-bottom: 75px;
+    }
+
+    .button-learn {
+        padding: 18px;
+        padding-inline: 23px;
+    }
+}
